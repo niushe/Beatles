@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+*{
+	font-family: 'Inconsolata'; 
+}
+
+html{
+	font-size: 100%;
+}
+
+a{
+	text-decoration: none;
+	color: gray;
+}
+
+a:hover{
+	color: yellow;
+}
+
+nav{
+	background-color: #e5e5f7;
+opacity: 1;
+background-image:  radial-gradient(#444cf7 1.9000000000000001px, transparent 1.9000000000000001px), radial-gradient(#444cf7 1.9000000000000001px, #e5e5f7 1.9000000000000001px);
+background-size: 76px 76px;
+background-position: 0 0,38px 38px;
+background-attachment: fixed;
+	top: 0;
+	left: 0;
+	position: sticky;
+	display: flex;
+	justify-content: space-between;
+}
+	nav ul{
+		display: flex;
+	}
+
+		nav ul li{
+			margin: 2rem;
+			list-style: none;		
+		}
+
+			nav ul li a{
+				font-size: 160%;
+				color: black;
+				text-decoration: none;
+				font-family: 'Anton';
+			}
+
+			nav ul li a:hover{
+				color: gray;
+				font-weight: 600;
+			}
+			
+h1{
+    font-family: 'Alfa Slab One';
+	color: #E5C517;
+	font-size: 3rem;
+	text-align: center;
+	text-shadow: 5px 2px 3px gray,
+				2px 5px 4px lightgray;
+}
+
+footer{
+	display: flex;
+	justify-content: space-between;
+}
+
+section img{
+	border: double 5px white;
+	margin-left: 43rem;
+	margin-top: 5rem;
+	margin-bottom: 5rem;
+}
+
+.encabezado__img{
+	width: 8rem;
+}
+
+.BgOscuro{
+	background-color: #e5e5f7;
+opacity: 1;
+background-image:  radial-gradient(#444cf7 1.9000000000000001px, transparent 1.9000000000000001px), radial-gradient(#444cf7 1.9000000000000001px, #e5e5f7 1.9000000000000001px);
+background-size: 76px 76px;
+background-position: 0 0,38px 38px;
+	background-attachment: fixed;
+	padding: 1rem;
+}
+
+.section__table{
+	color: white;
+}
+
+.table{
+	background-image: url(../img/background2.jpg);
+	margin-left: 37rem;
+}
+
+.table tr th{
+	color: white;
+}
+
+.table tr td{
+	color: white;
+}
+
+.table2 tr th{
+	color: white;
+}
+
+.table2 tr td{
+	color: white;
+}
+
+.table2{
+	background-image: url(../img/background2.jpg);
+	margin-left: 42rem;
+}
+
+.pie__color{
+	background-color: black;
+	padding: 2rem;
+	margin-top: 3rem;
+}

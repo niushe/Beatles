@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+@font-face {
+    font-family: 'bootleregular';
+    src: url('../font/bootle-4b9l-webfont.woff2') format('woff2'),
+         url('../font/bootle-4b9l-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html{
+	font-size: 100%;
+}
+
+nav{
+	padding: 0;
+    margin: 0;
+    background-color: gray;
+    background-size: 48px 48px;
+    background-image: radial-gradient(
+        transparent 20px,
+        #ffffff 20px,
+        #ffffff 24px,
+        transparent 24px
+    ),
+    radial-gradient(
+        transparent 20px,
+        #ffffff 20px,
+        #ffffff 24px,
+        transparent 24px
+    );
+    background-position: 0 0 , 24px 24px;
+	top: 0;
+	left: 0;
+	background-attachment: fixed;
+	position: sticky;
+	display: flex;
+	justify-content: space-between;
+}
+	nav ul{
+		display: flex;
+	}
+
+		nav ul li{
+			margin: 2rem;
+			list-style: none;		
+		}
+
+			nav ul li a{
+				font-size: 160%;
+				color: black;
+				text-decoration: none;
+				font-family: 'Anton';
+			}
+
+			nav ul li a:hover{
+				color: white;
+				font-weight: 600;
+			}
+
+label{
+	font-family: 'Anton';
+}	
+
+legend{
+	font-family: 'bootleregular';
+	border: none 1px;
+	background-color: rgba(62, 164, 221, 0.7);
+}	
+
+footer{
+	display: flex;
+	justify-content: space-between;
+}
+
+.encabezado__img{
+	width: 8rem;
+}
+
+.BgOscuro{
+	padding: 0;
+    margin: 0;
+    background-color: black;
+    background-size: 48px 48px;
+    background-image: radial-gradient(
+        transparent 20px,
+        #ffffff 20px,
+        #ffffff 24px,
+        transparent 24px
+    ),
+    radial-gradient(
+        transparent 20px,
+        #ffffff 20px,
+        #ffffff 24px,
+        transparent 24px
+    );
+    background-position: 0 0 , 24px 24px;
+	background-attachment: fixed;
+	padding: 1rem;
+}
+
+.pie__color{
+	background-color: black;
+	padding: 2rem;
+	margin-top: 3rem;
+}
+
+.fieldset__info--personal{
+	width: 49rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	background-color: gray;
+}
+
+.fieldset__info--de--venta{
+	width: 7rem;
+	margin-bottom: 1rem;
+	background-color: gray;
+}
+
+.fieldset__info--de--envio{
+	width: 13rem;
+	margin-bottom: 1rem;
+	background-color: gray;
+}
+
+.fieldset__newsletter{
+	width: 10rem;
+	margin-bottom: 1rem;
+	background-color: gray;
+}
+
+.label__mensaje{
+	border: solid 1px grey;
+	background-color: gray;
+}

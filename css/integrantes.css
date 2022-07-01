@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Barlow:wght@100;200;300;400;500&display=swap');
+
+*{
+	font-family: 'Barlow'; 
+}
+
+html{
+	font-size: 100%;
+}
+
+body{
+	background-color: #e5e5f7;
+opacity: 1;
+background-size: 50px 50px;
+background-image: repeating-linear-gradient(45deg, #414141 0, brown 1px, #2a2a2a 0, black 50%);
+	background-attachment: fixed;
+	padding: 1rem;
+}
+
+.main_nav{
+	background-color: #e5e5f7;
+	opacity: 1;
+	background-size: 50px 50px;
+	background-image: repeating-linear-gradient(45deg, #414141 0, brown 1px, #2a2a2a 0, black 50%);
+	background-attachment: fixed;
+	top: 0;
+	left: 0;
+	position: sticky;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+	.main_nav ul{
+			display: flex;
+			justify-content: center;
+		}	
+
+		.main_nav ul li{
+				margin: 1rem;
+				list-style: none;		
+			}
+
+			.main_nav ul li a{
+					font-size: 90%;
+					color: white;
+					text-decoration: none;
+					font-family: 'Anton';
+					background-image: linear-gradient(currentColor, currentColor);
+   				background-position: 0% 100%;
+    			background-repeat: no-repeat;
+    			background-size: 0% 2px;
+    			transition: background-size .3s;
+				}
+
+			.main_nav ul li a:hover{
+					color: white;
+					font-weight: 500;
+					background-size: 100% 2px;
+				}	
+
+.members__gifs{
+	width: 50%;
+	border: groove 5px lightgray;
+	background-color: darkgray;
+	padding: 0.5rem;
+	margin-left: 25%;
+}
+
+.beatle__pic{
+	margin-top: 2rem;
+	border: inset 3px gold;
+	width: 100%;
+}
+
+.pie{
+	border: none;
+	background-color: black;
+	padding: 3rem;
+	margin-top: 3rem;
+	display: flex;
+	justify-content: space-around;
+}
+
+.pie__icon--sm{
+	width: 50px;
+}
+
+.section__john{
+	color: #c4d344;
+	text-align: center;
+	font-size: 2.5rem;
+	font-weight: 500;
+	text-shadow: 3px 3px 3px gray, 
+				3px 3px 3px black;
+}
+
+.section__paul{
+	color: #07b1d4;
+	text-align: center;
+	font-size: 2.5rem;
+	font-weight: 500;
+	text-shadow: 3px 3px 3px gray, 
+				1px 1px 1px black;
+}
+
+.section__george{
+	color: #e43228;
+	text-align: center;
+	font-size: 2.5rem;
+	font-weight: 500;
+	text-shadow: 3px 3px 3px gray, 
+				1px 1px 1px black;
+}
+
+.section__ringo{
+	color: #e21b90;
+	text-align: center;;
+	font-size: 2.5rem;
+	font-weight: 500;
+	text-shadow: 3px 3px 3px gray, 
+				1px 1px 1px black;
+}
+
+.contenedor{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	grid-template-areas:
+	"nav"
+	"john"
+	"paul"
+	"george"
+	"ringo"
+	"pic"
+	"pie"
+}
+
+#nav{
+	grid-area: nav;
+}
+
+#john{
+	grid-area: john;
+}
+
+#paul{
+	grid-area: paul;
+}
+
+#george{
+	grid-area: george;
+}
+
+#ringo{
+	grid-area: ringo;
+}
+
+#pic{
+	grid-area: pic;
+}
+
+#footer{
+	grid-area: pie;
+}
+
+/* ==================1200PX===================== */
+
+@media (min-width: 1200px){
+	.contenedor{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: auto;
+	grid-template-areas:
+	"nav nav"
+	"ringo john"
+	"paul george"
+	"pic pic"
+	"pie pie"
+	}
+
+	.main_nav{
+	background-color: #e5e5f7;
+opacity: 1;
+background-size: 50px 50px;
+background-image: repeating-linear-gradient(45deg, #414141 0, brown 1px, #2a2a2a 0, black 50%);
+	background-attachment: fixed;
+	top: 0;
+	left: 0;
+	position: sticky;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+	.main_nav ul{
+			display: flex;
+		}	
+
+		.main_nav ul li{
+				margin: 2rem;
+				list-style: none;		
+			}
+
+			.main_nav ul li a{
+					font-size: 160%;
+					color: white;
+					text-decoration: none;
+					font-family: 'Anton';
+				}
+
+			.main_nav ul li a:hover{
+					color: white;
+					font-weight: 600;
+				}	
+
+			.beatle__pic{
+					
+					margin-top: 2rem;
+					border: inset 3px gold;
+					width: auto;
+				}		
+}
+		
+/* ==================1600PX===================== */
+
+@media (min-width: 1600px){
+	.beatle__pic{
+	margin-left: 25rem;
+	margin-top: 2rem;
+	border: inset 3px gold;
+	width: 55%;
+	}
+}
