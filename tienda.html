@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tienda</title>
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon 2.ico">
+	<link rel="stylesheet" type="text/css" href="css/tienda.css">
+</head>
+<body class="BgOscuro">
+	<nav>
+		<a href="index.html">
+			<img class="encabezado__img" src="img/beatl_.svg" alt="Logo de la pag">
+		</a>
+			<ul>
+				<li>
+					<a href="integrantes.html">INTEGRANTES</a>
+				</li>
+				<li>
+					<a href="historia.html">HISTORIA</a>
+				</li>
+				<li>
+					<a href="discografia.html">DISCOGRAFÍA</a>
+				</li>
+				<li>
+					<a href="tienda.html">TIENDA</a>
+				</li>
+			</ul>
+	</nav>
+	<!-- ends nav -->
+		<section>
+			<form action="envio.php">
+				<fieldset class="fieldset__info--personal">
+					<legend>Info personal</legend>
+					<label for="nombre">Nombre:</label>
+					<input type="text" id="nombre" placeholder="María Laura">
+					<label for="email">E-Mail:</label>
+					<input type="email" id="email" placeholder="mail@mail.com">
+					<label for="numero">Número de contacto:</label>
+					<input for="number" id="numero" placeholder="333444555">
+				</fieldset>
+				<fieldset class="fieldset__info--de--venta">
+					<legend>Info de venta</legend>
+					<label for="indumentaria">Indumentaria</label>
+					<input type="checkbox" id="indumentaria" value="indumentaria">
+					<br>
+					<label for="accesorios">Accesorios</label>
+					<input type="checkbox" id="accesorios" value="accesorios">
+					<br>
+					<label for="instrumentos">Instrumentos</label>
+					<input type="checkbox" id="instrumentos" value="instrumentos">
+				</fieldset>
+				<fieldset class="fieldset__info--de--envio">
+					<legend>Info de envio</legend>
+					<label for="local">Retiro en el local</label>
+					<input type="radio" id="local" value="local" name="envio">
+					<br>
+					<label for="casa">Envío a domicilio</label>
+					<input type="radio" id="casa" value="casa" name="envio">
+					<br>
+					<label for="localidad">Provincia</label>
+					<select name="" id="localidad">
+						<option value="CABA">Ciudad de BS AS</option>
+						<option value="BSAS">Provincia de BS AS</option>
+						<option value="interior">Interior del país</option>
+					</select>
+				</fieldset>
+				<fieldset class="fieldset__newsletter">
+					<legend>Aceptar newsletter?</legend>
+					<label for="si">Si</label>
+					<input type="radio" id="si" value="si" name="envio">
+					<label for="no">No</label>
+					<input type="radio" id="no" value="no" name="envio">
+				</fieldset>
+				<label class="label__mensaje" for="mensaje">Deje su mensaje</label>
+				<br>
+				<textarea name="" id="mensaje" cols="60" rows="20"></textarea>
+				<br>
+				<input type="reset" value="Cancelar">
+				<input type="submit" value="Enviar">
+			</form>
+		</section>
+		<br>
+	<footer class="pie__color">
+		<a href="https://www.facebook.com/thebeatles" target="_blank">
+			<img src="img/facebook.png" alt="facebook">
+		</a>
+
+		<a href="https://twitter.com/thebeatles" target="_blank"> 
+			<img src="img/twitter.png" alt="twitter">
+		</a>
+		<a href="https://www.instagram.com/thebeatles/?hl=es-la" target="_blank">
+			<img src="img/instagram.png" alt="instragram">
+		</a>
+	</footer>
+</body>
+</html>
